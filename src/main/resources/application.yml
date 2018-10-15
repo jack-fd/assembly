@@ -1,0 +1,24 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  servlet:
+    context-path: /demo
+# Spring
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+# Logging
+logging:
+  level: debug
+  level.com.chemanman: debug
+  path: ./logs/
+  file: assembly.log
