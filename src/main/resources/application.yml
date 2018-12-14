@@ -19,6 +19,6 @@ spring:
 # Logging
 logging:
   level: debug
-  level.com.chemanman: debug
+  level.com.github: debug
   path: ./logs/
   file: assembly.log
